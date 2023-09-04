@@ -4,7 +4,7 @@ fn main() {
     println!("This is a simple calculator :)");
 
     loop{
-        println!("Enter an operator (+, -, *, /) or q to quit:");
+        println!("Enter an operator (+, -, *, /, %) or q to quit:");
         let mut operator = String::new();
         io::stdin()
         .read_line(&mut operator)
@@ -40,6 +40,9 @@ fn main() {
         }
         else if operator == "/"{
             println!("{} / {} = {}", first_number, second_number, first_number / second_number);
+        }
+        else if operator == "%"{
+            println!("{} % {} = {}", first_number, second_number, first_number % second_number);
         }
         else{
             println!("Invalid operator");
