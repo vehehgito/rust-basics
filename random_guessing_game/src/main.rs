@@ -11,11 +11,11 @@ fn main() {
     let guess: u32 = guess.trim().parse().expect("Please type a number!");
 
     if guess == answer{
-        println!("You win! The number was {}",answer);
+        println!("You win! The number was {}.",answer);
     }
 
     else {
-        println!("You lose!!");
+        println!("You lose! The number was {}.",answer);
     }
 
     
